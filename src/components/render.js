@@ -6,7 +6,7 @@ import Resume from './pages/Resume';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 
-function selectPage() {
+function SelectPage() {
   const [currentPage, setCurrentPage] = useState('Home');
 
   const renderPage = () => {
@@ -40,4 +40,4 @@ function selectPage() {
   );
 }
 
-export default selectPage;
+export default SelectPage;
