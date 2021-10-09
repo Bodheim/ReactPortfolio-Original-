@@ -4,6 +4,7 @@
   "private": true,
   "description": "",
   "main": "server.js",
+  "homepage": "https://Bodheim.github.io/ReactPortfolio",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
@@ -31,7 +32,6 @@
   },
   "author": "",
   "license": "ISC",
-  "homepage": "https://Bodheim.github.io/ReactPortfolio",
   "repository": {
     "type": "git",
     "url": "https://github.com/Bodheim/ReactPortfolio"
