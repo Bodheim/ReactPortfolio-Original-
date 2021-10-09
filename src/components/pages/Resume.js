@@ -26,7 +26,7 @@ export default function Resume() {
           <h2>
             <a href="https://github.com/Bodheim" target="no_blank">
               <img
-                src="./assets/GitHub.png"
+                src="./assets/images/GitHub.png"
                 className="img-fluid pt-2 linkImg"
                 alt="Contact"
               />
@@ -59,7 +59,7 @@ export default function Resume() {
             target="no_blank"
           >
             <img
-              src="../assets/LI-In-Bug.png"
+              src="./assets/images/LI-In-Bug.png"
               className="img-fluid pt-2 linkImg"
               alt="Contact"
             />
