@@ -31,7 +31,11 @@ export default function Home() {
         /> */}
 
         <p className="col-8 pt-2 mt-4">
-          sell myself here <br />
+          Hello! My name is Abby and I have a strong passion for learning and am
+          constantly learning new things. I love the work I do and am proud to
+          have been a part of my recent companies and teams. I am on the search
+          to better myself and begin a career more in my field study to work in
+          programming.
         </p>
       </section>
     </div>

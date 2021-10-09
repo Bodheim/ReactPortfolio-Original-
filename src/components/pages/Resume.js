@@ -24,25 +24,25 @@ export default function Resume() {
       >
         <div className="d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center ms-5 me-5 mt-2 resumeIcons">
           <h2>
+            <a href="https://github.com/Bodheim" target="no_blank">
+              <img
+                src="../../public/assets/GitHub.png"
+                className="img-fluid pt-2 linkImg"
+                alt="Contact"
+              />
+            </a>
             <a
               href="https://github.com/Bodheim"
               target="no_blank"
               class="text-dark"
             >
-              GitHub
+              GitHub User:Bodheim
             </a>
           </h2>
-          <a href="https://github.com/Bodheim" target="no_blank">
-            <img
-              src="././public/assets/GitHub.png"
-              className="img-fluid pt-2 linkImg"
-              alt="Contact"
-            />
-          </a>
         </div>
         <div className="d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center ms-5 me-5 mt-2 resumeIcons">
           <a
-            href="./assets"
+            href="../../public/assets/ACastelowResume.docx.pdf"
             className="btn btn-success active btn-lg mt-4 p-5 resumeBtn"
             role="button"
             aria-pressed="true"
@@ -54,20 +54,12 @@ export default function Resume() {
         </div>
 
         <div className=" d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center text-light ms-5 me-5 mt-2 resumeIcons">
-          <h2>
-            <a
-              href="https://www.linkedin.com/in/abby-castelow/"
-              target="no_blank"
-            >
-              LinkedIn
-            </a>
-          </h2>
           <a
             href="https://www.linkedin.com/in/abby-castelow/"
             target="no_blank"
           >
             <img
-              src="././public/assets/LI-In-Bug.png"
+              src="../../public/assets/LI-In-Bug.png"
               className="img-fluid pt-2 linkImg"
               alt="Contact"
             />
