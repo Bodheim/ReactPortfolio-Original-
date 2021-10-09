@@ -7,7 +7,7 @@ function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
       <Navbar>
-        <Navbar.Brand className="px-5 mx-16">Abby Castelow</Navbar.Brand>
+        <Navbar.Brand className="ps-2 ms-3">Abby Castelow</Navbar.Brand>
         <Nav>
           <Nav.Link
             href=""
