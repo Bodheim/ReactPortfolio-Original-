@@ -26,7 +26,7 @@ export default function Resume() {
           <h2>
             <a href="https://github.com/Bodheim" target="no_blank">
               <img
-                src="../../public/assets/GitHub.png"
+                src="../../../public/assets/GitHub.png"
                 className="img-fluid pt-2 linkImg"
                 alt="Contact"
               />
@@ -42,7 +42,7 @@ export default function Resume() {
         </div>
         <div className="d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center ms-5 me-5 mt-2 resumeIcons">
           <a
-            href="../../public/assets/ACastelowResume.docx.pdf"
+            href="../../../public/assets/ACastelowResume.docx.pdf"
             className="btn btn-success active btn-lg mt-4 p-5 resumeBtn"
             role="button"
             aria-pressed="true"
@@ -59,7 +59,7 @@ export default function Resume() {
             target="no_blank"
           >
             <img
-              src="../../public/assets/LI-In-Bug.png"
+              src="../../../public/assets/LI-In-Bug.png"
               className="img-fluid pt-2 linkImg"
               alt="Contact"
             />

@@ -22,7 +22,7 @@ function Footer() {
           </a>
         </span>
         <span>
-          <h1 className="phone">(865) 809-8085</h1>
+          <a className="phone">(865) 809-8085</a>
         </span>
         <span>
           <a href="mailto:abby.castelow@gmail.com" className="email">
