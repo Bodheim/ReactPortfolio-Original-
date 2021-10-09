@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
-import validator from 'validator';
+import { validateEmail } from '../../utils/helpers';
 
 export default function Contact() {
   const [email, setEmail] = useState('');
-
+  const [name, setName] = useState('');
   const [message, setMessage] = useState('');
 
-  const [hoveredText, setHoveredText] = useState(false);
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputType = target.name;
+    const inputValue = target.value;
 
-  function checkValidEmail(e) {
-    if (!validator.isEmail(email)) {
-      alert('Please provide a valid email address');
+    if (inputType === 'email') {
+      setEmail(inputValue);
+    } else if (inputType === 'name') {
+      setName(inputValue);
     } else {
-      alert(
-        'Thank you! I will review your message and respond as soon as possible'
-      );
-      window.location.reload();
+      setMessage(inputValue);
     }
-  }
+  };
 
-  const checkText = (e) => {
-    if (hoveredText && message.length < 1) {
-      setHoveredText(false);
-      alert('Please provide a message');
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!validateEmail(email)) {
+      window.alert('Please enter a valid email address.');
+    } else {
+      setEmail('');
+      setMessage('');
+      setName('');
+      window.alert("Thanks for the message! I'll reach back out shortly.");
     }
   };
 
@@ -52,6 +58,9 @@ export default function Contact() {
       >
         <div className="d-flex flex-column justify-content-center align-items-center mt-5">
           <h2 className="mt-3">
+            <a>Contact Me:</a>
+          </h2>
+          <h2 className="mt-3">
             <a className="phone">(865) 809-8085</a>
           </h2>
           <h2 className="mt-1">
@@ -61,46 +70,51 @@ export default function Contact() {
           </h2>
         </div>
 
-        <Form className="mt-5">
-          <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-            <Form.Label>
-              <h5>
-                <strong>Your Email:</strong>
-              </h5>
-            </Form.Label>
-            <div class="form-group">
-              <input
-                type="email"
-                className="form-control"
-                id="exampleFormControlInput1"
-                onChange={(event) => setEmail(event.target.value)}
-              />
-            </div>
-          </Form.Group>
-          <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
-            <Form.Label>
-              <h5>
-                <strong>Message:</strong>
-              </h5>
-            </Form.Label>
-            <div className="form-group">
-              <textarea
-                className="form-control"
-                rows="3"
-                onChange={(event) => setMessage(event.target.value)}
-                onMouseEnter={(e) => setHoveredText(true)}
-                onMouseLeave={(e) => checkText(e)}
-              ></textarea>
-            </div>
-          </Form.Group>
-        </Form>
-        <Button
-          variant="success"
-          style={{ width: '15vw' }}
-          onClick={(e) => checkValidEmail(e)}
-        >
-          Submit
-        </Button>
+        <form>
+          <div className="mb-3">
+            <label for="exampleInputEmail1" className="form-label">
+              Name
+            </label>
+            <input
+              name="name"
+              value={name}
+              className="form-control"
+              id="exampleInputEmail1"
+              onChange={handleInputChange}
+              aria-describedby="emailHelp"
+            />
+          </div>
+          <div className="mb-3">
+            <label for="exampleInputPassword1" className="form-label">
+              Email
+            </label>
+            <input
+              name="email"
+              value={email}
+              className="form-control"
+              id="exampleInputPassword1"
+              onChange={handleInputChange}
+            />
+          </div>
+          <div class="form-group mb-3">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea
+              name="message"
+              value={message}
+              class="form-control"
+              id="exampleFormControlTextarea1"
+              onChange={handleInputChange}
+              rows="3"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            className="btn btn-primary"
+            onClick={handleFormSubmit}
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
