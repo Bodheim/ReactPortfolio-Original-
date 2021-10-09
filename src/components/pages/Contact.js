@@ -57,12 +57,8 @@ export default function Contact() {
         id="links"
       >
         <div className="d-flex flex-column justify-content-center align-items-center mt-5">
-          <h2 className="mt-3">
-            <a>Contact Me:</a>
-          </h2>
-          <h2 className="mt-3">
-            <a className="phone">(865) 809-8085</a>
-          </h2>
+          <h2 className="mt-3">Contact Me:</h2>
+          <h2 className="mt-3 phone">(865) 809-8085</h2>
           <h2 className="mt-1">
             <a href="mailto:abby.castelow@gmail.com" className="email">
               abby.castelow@gmail.com

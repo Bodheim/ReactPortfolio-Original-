@@ -10,7 +10,9 @@ function Footer() {
           </a>
         </span>
         <span>
-          <a className="phone">303-718-1311</a>
+          <a href="mailto:abby.castelow@gmail.com" className="phone">
+            (865) 809-8085
+          </a>
         </span>
         <span>
           <a href="mailto:abby.castelow@gmail.com" className="email">

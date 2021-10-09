@@ -36,7 +36,7 @@ export default function Resume() {
             <img
               src="././public/assets/GitHub.png"
               className="img-fluid pt-2 linkImg"
-              alt="Contact picture"
+              alt="Contact"
             />
           </a>
         </div>
@@ -69,7 +69,7 @@ export default function Resume() {
             <img
               src="././public/assets/LI-In-Bug.png"
               className="img-fluid pt-2 linkImg"
-              alt="Contact picture"
+              alt="Contact"
             />
           </a>
         </div>
