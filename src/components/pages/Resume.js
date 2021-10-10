@@ -23,34 +23,29 @@ export default function Resume() {
         id="links"
       >
         <div className="d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center ms-5 me-5 mt-2 resumeIcons">
-          <h2>
-            <a href="https://github.com/Bodheim" target="no_blank">
-              <img
-                src="./assets/images/GitHub.png"
-                className="img-fluid pt-2 linkImg"
-                alt="Contact"
-              />
-            </a>
-            <a
-              href="https://github.com/Bodheim"
-              target="no_blank"
-              class="text-dark"
-            >
-              GitHub User:Bodheim
-            </a>
-          </h2>
-        </div>
-        <div className="d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center ms-5 me-5 mt-2 resumeIcons">
           <a
             href="./assets/ACastelowResume.docx.pdf"
-            className="btn btn-success active btn-lg mt-4 p-5 resumeBtn"
+            className="btn btn-success active btn-lg mt-4 resumeBtn"
             role="button"
             aria-pressed="true"
             target="no_blank"
             download
           >
+            <i
+              class="bi bi-file-earmark-arrow-down-fill"
+              role="img"
+              aria-label="Resume"
+            ></i>
             {'\n'} Download {'\n'} Resume {'\n'}
           </a>
+        </div>
+
+        <div className="d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center ms-5 me-5 mt-2 resumeIcons">
+          <h2>
+            <a href="https://github.com/Bodheim" target="no_blank">
+              <i class="bi-github" role="img" aria-label="GitHub"></i>
+            </a>
+          </h2>
         </div>
 
         <div className=" d-flex flex-column justify-content-center align-items-center col-md-10 col-12 text-center text-light ms-5 me-5 mt-2 resumeIcons">
@@ -58,11 +53,7 @@ export default function Resume() {
             href="https://www.linkedin.com/in/abby-castelow/"
             target="no_blank"
           >
-            <img
-              src="./assets/images/LI-In-Bug.png"
-              className="img-fluid pt-2 linkImg"
-              alt="Contact"
-            />
+            <i class="bi bi-linkedin" role="img" aria-label="LinkedIn"></i>
           </a>
         </div>
       </div>
