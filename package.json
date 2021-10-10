@@ -12,7 +12,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lite-server": "lite-server"
+    "lite-server": "lite-server",
+    "develop": "nodemon app.js"
   },
   "dependencies": {
     "compression": "^1.7.4",

@@ -14,7 +14,9 @@ function Footer() {
         text-center
         container-fluid
         navUL
-        footer"
+        footer
+        bg-dark"
+        style="background-color: #46B1C9;"
       >
         <span>
           <a href="https://github.com/Bodheim" clasName="github">

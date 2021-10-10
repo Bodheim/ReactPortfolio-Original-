@@ -6,7 +6,7 @@ import { Navbar, Nav } from 'react-bootstrap';
 function NavTabs({ currentPage, handlePageChange }) {
   return (
     <>
-      <Navbar>
+      <Navbar class="navbar navbar-dark" style="background-color: #46B1C9;">
         <Navbar.Brand className="ps-2 ms-3">Abby Castelow</Navbar.Brand>
         <Nav>
           <Nav.Link
